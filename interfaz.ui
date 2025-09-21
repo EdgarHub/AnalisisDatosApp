@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>761</width>
+    <height>527</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Analisis de Datos Python</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>Alas.png</normaloff>Alas.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #034765;
+color:#FFFFFF;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="leftMargin">
+       <number>9</number>
+      </property>
+      <property name="topMargin">
+       <number>5</number>
+      </property>
+      <property name="rightMargin">
+       <number>9</number>
+      </property>
+      <property name="bottomMargin">
+       <number>5</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="lbTitulo">
+        <property name="font">
+         <font>
+          <family>Rockwell</family>
+          <pointsize>14</pointsize>
+          <underline>false</underline>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+	color:#FFFFFF;
+	background-color:#0A3E81;
+	border: 3px solid #03234D;
+	border-radius:9px;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Python: Analisis de Datos</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QWidget" name="widget" native="true">
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <property name="topMargin">
+        <number>2</number>
+       </property>
+       <property name="bottomMargin">
+        <number>2</number>
+       </property>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <property name="spacing">
+          <number>5</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="btnCargar">
+           <property name="font">
+            <font>
+             <family>Rockwell</family>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	color:#FFFFFF;
+	background-color:#0A3E81;
+	border: 3px solid #03234D;
+	border-radius:9px;
+}
+QPushButton:hover{
+	color:#FFFFFF;
+	background-color:#05587C;
+	border: 3px solid #02344A;
+	border-radius:9px;
+}
+QPushButton:pressed{
+	color:#FFFFFF;
+	background-color:#03234D;
+	border: 3px solid #3C27F5;
+	border-radius:9px;
+}</string>
+           </property>
+           <property name="text">
+            <string>Cargar Archivo</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnConsultar">
+           <property name="font">
+            <font>
+             <family>Rockwell</family>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	color:#FFFFFF;
+	background-color:#0A3E81;
+	border: 3px solid #03234D;
+	border-radius:9px;
+}
+QPushButton:hover{
+	color:#FFFFFF;
+	background-color:#05587C;
+	border: 3px solid #02344A;
+	border-radius:9px;
+}
+QPushButton:pressed{
+	color:#FFFFFF;
+	background-color:#03234D;
+	border: 3px solid #3C27F5;
+	border-radius:9px;
+}</string>
+           </property>
+           <property name="text">
+            <string>Consultar</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnRegresar">
+           <property name="font">
+            <font>
+             <pointsize>7</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	color:#C30005;
+	background-color:#0A3E81;
+	border: 3px solid #03234D;
+	border-radius:8px;
+}
+QPushButton:hover{
+	color:#C30005;
+	background-color:#05587C;
+	border: 3px solid #02344A;
+	border-radius:8px;
+}
+QPushButton:pressed{
+	color:#C30005;
+	background-color:#03234D;
+	border: 3px solid #3C27F5;
+	border-radius:8px;
+}</string>
+           </property>
+           <property name="text">
+            <string>Regresar Consulta</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnExportar">
+           <property name="font">
+            <font>
+             <family>Rockwell</family>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	color:#FFFFFF;
+	background-color:#0A3E81;
+	border: 3px solid #03234D;
+	border-radius:9px;
+}
+QPushButton:hover{
+	color:#FFFFFF;
+	background-color:#05587C;
+	border: 3px solid #02344A;
+	border-radius:9px;
+}
+QPushButton:pressed{
+	color:#FFFFFF;
+	background-color:#03234D;
+	border: 3px solid #3C27F5;
+	border-radius:9px;
+}</string>
+           </property>
+           <property name="text">
+            <string>Exportar</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="cbFormato">
+           <property name="font">
+            <font>
+             <family>Rockwell</family>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QComboBox QAbstractItemView{
+	color:#FFFFFF;
+	background-color:#039690;
+}
+QComboBox:editable{
+	color:#FFFFFF;
+	background-color:#A09500;
+}
+QComboBox{
+	color:#FFFFFF;
+	background-color:#0A3E81;
+	border: 3px solid #03234D;
+	border-radius:9px;
+}
+QComboBox:hover{
+	color:#FFFFFF;
+	background-color:#05587C;
+	border: 3px solid #02344A;
+	border-radius:9px;
+}
+</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>Excel</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>JSON</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>CSV</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>HTML</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnGraficar">
+           <property name="font">
+            <font>
+             <family>Rockwell</family>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	color:#FFFFFF;
+	background-color:#0A3E81;
+	border: 3px solid #03234D;
+	border-radius:9px;
+}
+QPushButton:hover{
+	color:#FFFFFF;
+	background-color:#05587C;
+	border: 3px solid #02344A;
+	border-radius:9px;
+}
+QPushButton:pressed{
+	color:#FFFFFF;
+	background-color:#03234D;
+	border: 3px solid #3C27F5;
+	border-radius:9px;
+}</string>
+           </property>
+           <property name="text">
+            <string>Graficar</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnColor">
+           <property name="font">
+            <font>
+             <family>Rockwell</family>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	color:#FFFFFF;
+	background-color:#0A3E81;
+	border: 3px solid #03234D;
+	border-radius:9px;
+}
+QPushButton:hover{
+	color:#FFFFFF;
+	background-color:#05587C;
+	border: 3px solid #02344A;
+	border-radius:9px;
+}
+QPushButton:pressed{
+	color:#FFFFFF;
+	background-color:#03234D;
+	border: 3px solid #3C27F5;
+	border-radius:9px;
+}</string>
+           </property>
+           <property name="text">
+            <string>Color Grafica</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnCancelar">
+           <property name="font">
+            <font>
+             <family>Rockwell</family>
+             <pointsize>10</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	color:#C30005;
+	background-color:#0A3E81;
+	border: 3px solid #03234D;
+	border-radius:9px;
+}
+QPushButton:hover{
+	color:#C30005;
+	background-color:#05587C;
+	border: 3px solid #02344A;
+	border-radius:9px;
+}
+QPushButton:pressed{
+	color:#C30005;
+	background-color:#03234D;
+	border: 3px solid #3C27F5;
+	border-radius:9px;
+}</string>
+           </property>
+           <property name="text">
+            <string>Cancelar</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="widget_2" native="true">
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <property name="spacing">
+        <number>3</number>
+       </property>
+       <property name="topMargin">
+        <number>4</number>
+       </property>
+       <property name="bottomMargin">
+        <number>4</number>
+       </property>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QTextEdit" name="txtConsulta">
+           <property name="font">
+            <font>
+             <pointsize>15</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QTextEdit{
+	color:#FFFFFF;
+	background-color:#0A3E81;
+	border: 3px solid #03234D;
+	border-radius:10px;
+}</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="tablaResumen">
+           <property name="styleSheet">
+            <string notr="true">QTableWidget{
+	color:#FFFFFF;
+	background-color:#05587C;
+	border: 3px solid #DCDCDC;
+	border-radius:10px;
+	gridline-color: #FFFFFF;
+	selection-color: #DCDCDC;
+	selection-background-color:#034765;
+}
+QHeaderView::section{
+	color:#FFFFFF;
+	background-color:#05587C;
+}</string>
+           </property>
+           <property name="rowCount">
+            <number>0</number>
+           </property>
+           <property name="columnCount">
+            <number>0</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="widget_3" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>9</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>9</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QTableWidget" name="tablaDatos">
+           <property name="styleSheet">
+            <string notr="true">QTableWidget{
+	color:#FFFFFF;
+	background-color:#05587C;
+	border: 3px solid #DCDCDC;
+	border-radius:10px;
+	gridline-color: #FFFFFF;
+	selection-color: #DCDCDC;
+	selection-background-color:#034765;
+}
+QHeaderView::section{
+	color:#FFFFFF;
+	background-color:#05587C;
+}</string>
+           </property>
+           <property name="rowCount">
+            <number>0</number>
+           </property>
+           <property name="columnCount">
+            <number>0</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>761</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
