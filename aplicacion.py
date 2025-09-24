@@ -17,7 +17,7 @@ class Aplicacion(QMainWindow):
         #Constructor de la clase Heredada
         super(Aplicacion, self).__init__()
         # Llamar la interfaz desde el backend
-        loadUi(r"C:\Users\soporte\Desktop\Python Analisis Ed\Aplicacion\interfaz.ui",self)
+        loadUi(r"C:\Users\torit\OneDrive\Desktop\Aplicacion\interfaz.ui",self)
         # Vincular los metodos a los Widgets
         self.btnCancelar.clicked.connect(self.cancelar)
         self.btnCargar.clicked.connect(self.cargar_archivo)
